@@ -1,0 +1,14 @@
+POST /php/api.php?function=csr&argument=&key=E7g24fPcZgL5dg78 HTTP/1.1
+Host: challenges.hackvent.hacking-lab.com:1088
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://challenges.hackvent.hacking-lab.com:1088/tools.php
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 1057
+Cookie: ad0388922ef2297679023cc0f95111bcab9d1245=de593f9be1fefd3ea48aed65b899329846ecbef5a5b33c96fa381bbdf002aeac; PHPSESSID=bm9thde9t5m6d0197ve4q6hts2
+Connection: close
+
+csr=*
