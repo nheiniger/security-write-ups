@@ -1,0 +1,4 @@
+hack.chat logger: http://simmac.ovh/hackchat-hackvent.txt
+
+To compile from Markdown to PDF using pandoc and a stylesheet:
+andoc -t html5 -V margin-left=0.2in -V margin-right=0.2in -V margin-top=0.2in -V margin-bottom=0.2in --css github-pandoc.css 14/00_notes.md -o testday14.pdf

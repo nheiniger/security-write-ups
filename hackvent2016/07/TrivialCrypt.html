@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+body {
+font-family: sans-serif;
+}
+#out {
+font-size: 1.5;
+font-weight: bold;
+}
+
+#out.wrong {
+color: red;
+}
+#out.right {
+color: green;
+}
+</style>
+<title>TrivialCrypt</title>
+
+</head><body><input value="foob" id="pass" placeholder="password" type="text"><input id="decrypt" value="decrypt" type="button">
+<p class="wrong" id="out">wrong password ...</p>
+<script>
+s3cr3t=[2155568001,3847164610,2684356740,2908571526,2557362074,2853440707,3849194977,3171764887];
+document.getElementById('decrypt').onclick = function() {
+	var pass = document.getElementById('pass').value;
+
+	var s="";
+	var guess = 0xc82d6ab7;
+	var foo = s3cr3t[0] ^ guess;
+	for(var i=0;i<s3cr3t.length;i++) {
+		var pp="";
+		for(var p = (s3cr3t[i] ^ guess); p>0; p>>=8) {
+			pp = String.fromCharCode(p&0xFF)+pp;
+		}
+		s+=pp;
+	}
+
+	var out = document.getElementById('out');
+	if(crc32(s) == 2343675265){
+		out.className = "right";
+		out.firstChild.nodeValue = s;
+	}else{
+		out.className = "wrong";
+		out.firstChild.nodeValue = "wrong password ...";
+	}
+}
+
+var makeCRCTable = function(){
+    var c;
+    var crcTable = [];
+    for(var n =0; n < 256; n++){
+        c = n;
+        for(var k =0; k < 8; k++){
+            c = ((c&1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1));
+        }
+        crcTable[n] = c;
+    }
+    return crcTable;
+}
+
+var crc32 = function(str) {
+    var crcTable = window.crcTable || (window.crcTable = makeCRCTable());
+    var crc = 0 ^ (-1);
+
+    for (var i = 0; i < str.length; i++ ) {
+        crc = (crc >>> 8) ^ crcTable[(crc ^ str.charCodeAt(i)) & 0xFF];
+    }
+
+    return ((crc&0xFFFFFFFF) ^ (-1)) >>> 0;
+}
+
+</script>
+
+
+
+</body></html>
