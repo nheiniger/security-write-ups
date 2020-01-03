@@ -1,0 +1,93 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: #1F1F1F;
+  background-image: url('background.jpg');
+  background-size:cover;
+}
+
+img[src="#"]{
+  display:none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+#egg {
+  width: 240px;
+  height: 240px;
+  padding: 0 110px;
+}
+
+#container1 {
+  top: 200px;
+  height: 210px;	
+  padding: 40px 10px;
+}
+
+#container2 {
+  top: 480px;
+  padding: 20px 10px;	
+}
+
+#container1, #container2{
+  float: left;
+  position: absolute;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 480px;
+  width: 100%;
+  background-color: rgba(222,166,68,0.9);
+  -webkit-box-shadow: 0px 0px 18px 0px black;
+  -moz-box-shadow: 0px 0px 18px 0px black;
+  box-shadow: 0px 0px 18px 0px black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form {
+	float: left;
+}
+
+.form input{
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border:none;
+  border-radius: 0;
+  background:black;
+  color:#959595;
+  height:35px;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  outline:none;
+}
+
+#sub{
+  background:#3F322D;
+  cursor: pointer;
+}
+
+#sub:hover{
+  background: #724B3C;
+}
+
+.form input[type="text"],
+.form input[type="password"]{
+  border-left:solid 5px black;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus{
+  border-left:solid 5px #696969;
+}
