@@ -1,0 +1,47 @@
+🏁🍇
+  💭 Initialization
+  🎶🔤🐇🦁🍟🗞🍰📘🥖🖼🚩🥩😵⛺❗️🥐😀🍉🥞🏁👉️🧀🍎🍪🚀🙋🏔🍊😛🐔🚇🔷🎶📄🍦📩🍋💩⁉️🍄🥜🦖💣🎄🥨📺🥯📽🍖🐠📘👄🍔🍕🐖🌭🍷🦑🍴⛪🤧🌟🔓🔥🎁🧦🤬🚲🔔🕯🥶❤️💎📯🎙🎚🎛📻📱🔋😈🔌💻🐬🖨🖱🖲💾💿🧮🎥🎞🔎💡🔦🏮📔📖🏙😁💤👻🛴📙📚🥓📓🛩📜📰😂🍇🚕🔖🏷💰⛴💴💸🚁🥶💳😎🖍🚎🥳📝📁🗂🥴📅📇📈📉📊🔒⛄🌰🕷⏳📗🔨🛠🧲🐧🚑🧪🐋🧬🔬🔭📡🤪🚒💉💊🛏🛋🚽🚿🧴🧷🍩🧹🧺😺🧻🚚🧯😇🚬🗜👽🔗🧰🎿🛷🥌🎯🎱🎮🎰🎲🏎🥵🧩🎭🎨🧵🧶🎼🎤🥁🎬🏹🎓🍾💐🍞🔪💥🐉🚛🦕🔐🍗🤠🐳🧫🐟🖥🐡🌼🤢🌷🌍🌈✨🎍🌖🤯🐝🦠🦋🤮🌋🏥🏭🗽⛲💯🌁🌃🚌📕🚜🛁🛵🚦🚧⛵🛳💺🚠🛰🎆🤕💀🤓🤡👺🤖👌👎🧠👀😴🖤🔤 ❗️➡️ var_23
+  🆕🍯🐚🔢🍆🐸❗️➡️ 🖍🆕var_42
+  🔂 i 🆕⏩⏩ 0 256❗️ 🍇
+    i ➡️🐽 var_42 🐽 var_23 i❗️❗
+  🍉
+  🎶🔤🍴🎙🦖📺🍉📘🍖📜🔔🌟🦑❤️💩🔋❤️🔔🍉📩🎞🏮🌟💾⛪📺🥯🥳🔤 ❗️➡️ alphabet
+  🎶🔤💐🐡🧰🎲🤓🚚🧩🤡🔤 ❗️➡️ fullM
+
+  💭 Gets the input, make sure it's not empty
+  😀 🔤 🔒 ➡️ 🎅🏻⁉️ ➡️ 🎄🚩 🔤❗️
+  📇🔪 🆕 🔡 👂🏼❗️ 0 1❗️❗️ ➡️ input
+  ↪️🐔input❗️🙌 0 🍇
+    😀 🔤FAIL EMPTY INPUT🔤❗️
+    🤯🐇💻🔤👎🔤❗
+  🍉
+
+  ☣️🍇
+    💭 New memory zone, 26 chars must be the flag length
+    🆕🧠🆕26❗️➡️ memory
+    💭 Main loop, checks the password
+    🔂 i 🆕⏩⏩ 0 26❗️🍇
+      🐽 var_42 🐽 alphabet i❗️❗️ ➡️ something
+      🐽 input i 🚮🐔input❗️❗️➡️ char
+      😀 🍪🔤input length = 🔤🔡🐔input❗️10❗️🍪❗️
+      😀 🍪🔤input char = 🔤🔡🔢char❗️ 10❗️🍪❗️
+      💧🍺something➖128❗️❌char❌💧i❗️➡️ oneMore
+      😀 🍪🔤oneMore = 🔤🔡🔢oneMore❗️ 10❗️🍪❗️
+💭      😀 🍪🔤You need oneMore = 🔤🔡🍺🐽 var_42 🐽 fullM i❗️❗️➖ 🤜🤜 45➖🐔input❗️🤛✖3🤛 10❗️🍪❗️
+      ↪️ i ◀ 8 🤝❎🍺🐽 var_42 🐽 fullM i❗️❗️➖ 🤜🤜 45➖🐔input❗️🤛✖3🤛 🙌 🔢oneMore❗️❗️🍇
+        😀 🔤FAIL 02🔤❗️
+        🤯🐇💻🔤👎🔤❗
+      🍉
+      ✍memory oneMore i 1❗
+    🍉
+
+    💭 Finally, display the flag !
+    🔡🆕📇🧠memory 26❗️❗️➡️ flag
+    ↪️flag 🙌 🤷‍♀️🍇
+      😀 🔤FAIL 03🔤❗️
+      🤯🐇💻🔤👎🔤❗️
+    🍉
+
+    😀🍺flag❗️
+  🍉
+🍉
